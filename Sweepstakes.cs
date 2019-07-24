@@ -8,9 +8,20 @@ namespace SweepstakesProject
 {
 
     //use dictionary
-    class Sweepstakes
+    public class Sweepstakes
     {
+
+        public void SweepstakesNames(string name)
+        {
+            Dictionary<string, string> contestantName = new Dictionary<string, string>();
+            contestantName.Add("Dorothy", "Hamilton");
+            contestantName.Add("Seth", "Rogers");
+            contestantName.Add("Robert", "Cortez");
+            contestantName.Add("Isabell", "Napoli");
+        }
 
 
     }
+
+ 
 }
