@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweepstakesProject", "SweepstakesProject\SweepstakesProject.csproj", "{D4B1280B-47AE-45AE-AB85-DFEB5A3DB187}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweepstakesProject", "SweepstakesProject.csproj", "{D4B1280B-47AE-45AE-AB85-DFEB5A3DB187}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {82EDAE28-4B3A-4272-880B-22488E28653C}
+		SolutionGuid = {8E495C6C-C11B-47B8-9365-9C02D600F2AD}
 	EndGlobalSection
 EndGlobal
