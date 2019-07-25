@@ -17,7 +17,7 @@ namespace SweepstakesProject
         public Sweepstakes GetSweepstakes()
         {
             Sweepstakes sweepstakes = new Sweepstakes();
-            return;
+            return
         }
 
 

@@ -8,34 +8,20 @@ namespace SweepstakesProject
 {
 
     //use interface
-    public class Contestant:UserInterface
+    public class Contestant
     {
         public string firstName;
         public string lastName;
         public int registrationNumber;
         public string email;
-        public void FirstName()
+
+        public Contestant()
         {
-            Console.WriteLine("Enter contestant first name");
-            firstName = Console.ReadLine();
-            
-        }
-        public void LastName()
-        {
-            Console.WriteLine("Enter contestant last name");
-            lastName = Console.ReadLine();
+            firstName = UserInterface.firstName;
+            lastName = UserInterface.lastName;
+            registrationNumber = UserInterface.registerNumber;
+            email = UserInterface.email;
         }
 
-        public void RegistrationNumber()
-        {
-            Console.WriteLine("Enter contestant registration number");
-            registrationNumber = int.Parse(Console.ReadLine());
-        }
-
-        public void Email()
-        {
-            Console.WriteLine("Enter contestant email address");
-            email = Console.ReadLine();
-        }
     }
 }

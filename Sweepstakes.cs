@@ -13,7 +13,7 @@ namespace SweepstakesProject
         Contestant contestant = new Contestant();
         public string input;
 
-        public Contestant UserInterface { get; private set; }
+         
 
         public void SweepstakesNames(string name)
         {
@@ -28,10 +28,6 @@ namespace SweepstakesProject
         {
             Dictionary<int, string> contestantRegistration = new Dictionary<int, string>();
             contestantRegistration.Add(contestant.registrationNumber, contestant.firstName);
-            contestantRegistration.Add(6874, "Seth");
-            contestantRegistration.Add(5322, "Robert");
-            contestantRegistration.Add(3238, "Isabell");
-            contestantRegistration.Add(2408, "James");
 
             
 
@@ -45,7 +41,7 @@ namespace SweepstakesProject
 
         public void PrintContestantInfo(Contestant contestant)
         {
-
+            Dictionary<string, UserInterface> infromation = new Dictionary<string, UserInterface>();
             Console.ReadLine();
 
         }
