@@ -15,7 +15,7 @@ namespace SweepstakesProject
         public int registrationNumber;
         public string email;
 
-        public Contestant()
+        public Contestant(vc )
         {
             firstName = UserInterface.firstName;
             lastName = UserInterface.lastName;

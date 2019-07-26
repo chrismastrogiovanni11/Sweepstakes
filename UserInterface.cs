@@ -21,6 +21,7 @@ namespace SweepstakesProject
         }
         public static void LastName()
         {
+
             Console.WriteLine("Enter Contestant last name");
             lastName = Console.ReadLine();
 
