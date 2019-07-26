@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SweepstakesProject
 {
 
-    //use interface
+    
     public class Contestant
     {
         public string firstName;
@@ -15,7 +15,7 @@ namespace SweepstakesProject
         public int registrationNumber;
         public string email;
 
-        public Contestant(vc )
+        public Contestant()
         {
             firstName = UserInterface.firstName;
             lastName = UserInterface.lastName;

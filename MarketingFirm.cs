@@ -7,10 +7,40 @@ using System.Threading.Tasks;
 namespace SweepstakesProject
 {
     //dependency injection
-    class MarketingFirm
-    {
+   public class MarketingFirm
+   {
 
 
 
-    }
+        public MarketingFirm()
+        {
+            Sweepstakes sweepstakes = new Sweepstakes();
+
+
+
+
+        }
+
+
+
+
+        public void CreateSweepstakes()
+        {
+
+        }
+
+
+
+
+
+
+
+   }
+
+
+
+
+
+
+
 }

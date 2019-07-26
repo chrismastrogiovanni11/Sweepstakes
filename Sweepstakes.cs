@@ -15,18 +15,24 @@ namespace SweepstakesProject
         public Contestant contestant;
         Dictionary<string, Contestant> contestantName = new Dictionary<string, Contestant>();
         public string Winner;
-            
+        Random rand;
+        
 
         public Sweepstakes()
         {
+            rand = new Random();
             
         }
+            
+
 
         public void SweepstakesNames(string name)
         {
-            
-           
-  
+
+            name = contestant.firstName + contestant.lastName;
+            Console.ReadLine();
+
+
         }
 
         public void RegisterContestant(Contestant contestant)
@@ -38,15 +44,20 @@ namespace SweepstakesProject
 
         }
 
-        public void PickWinner()
+        public int PickWinner()
         {
-            Dictionary<string, string> sweepstakesWinner = new Dictionary<string, string>();
-
+            Dictionary<string, Contestant> sweepstakesWinner = new Dictionary<string, Contestant>();
+            int randWin = 0;
+            for (int i = 0; i < sweepstakesWinner.Count; i++)
+            {
+               randWin = rand.Next(sweepstakesWinner.Count);
+            }
+            return randWin;
         }
 
         public void PrintContestantInfo(Contestant contestant)
         {
-            Dictionary<string, UserInterface> information = new Dictionary<string, UserInterface>();
+            Dictionary<string, Contestant> information = new Dictionary<string, Contestant>();
             Console.ReadLine();
 
         }
