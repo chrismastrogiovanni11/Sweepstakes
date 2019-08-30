@@ -11,11 +11,11 @@ namespace SweepstakesProject
     {
         
         public string input;
-       static Dictionary<string, Contestant> contestantName = new Dictionary<string, Contestant>();
+       static Dictionary<int, Contestant> contestantName = new Dictionary<int, Contestant>();
         public string Winner;
         Random rand;
         public string name;
-        
+        int counter = 1;
 
         public Sweepstakes()
         {
@@ -34,27 +34,19 @@ namespace SweepstakesProject
 
         }
 
-        public static void RegisterContestant(Contestant contestant)
+        public void RegisterContestant(Contestant contestant)
         {
-
-            contestantName.Add(UserInterface.firstName, contestant);
-            contestantName.Add(UserInterface.lastName, contestant);
-            contestantName.Add(UserInterface.email, contestant);
-            contestantName.Add(UserInterface.registerNumber.ToString(), contestant);
-            
-
-
+            contestant.registrationNumber = counter;
+            contestantName.Add(contestant.registrationNumber, contestant);
+            counter++;
         }
 
-        public int PickWinner()
+        public string PickWinner()
         {
-            Dictionary<string, Contestant> sweepstakesWinner = new Dictionary<string, Contestant>();
-            int randWin = 0;
-            for (int i = 0; i < sweepstakesWinner.Count; i++)
-            {
-               randWin = rand.Next(sweepstakesWinner.Count);
-            }
-            return randWin;
+               int randWin = rand.Next(1,contestantName.Count);
+               var winner = contestantName[randWin];
+            
+            return winner.firstName + winner.lastName;
         }
 
         public void PrintContestantInfo(Contestant contestant)

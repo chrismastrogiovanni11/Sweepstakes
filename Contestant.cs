@@ -19,7 +19,7 @@ namespace SweepstakesProject
         {
             firstName = UserInterface.firstName;
             lastName = UserInterface.lastName;
-            registrationNumber = UserInterface.registerNumber;
+           // registrationNumber = UserInterface.registerNumber;
             email = UserInterface.email;
         }
 

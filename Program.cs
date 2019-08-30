@@ -12,11 +12,7 @@ namespace SweepstakesProject
 
         static void Main(string[] args)
         {
-            UserInterface.FirstName();
-            UserInterface.LastName();
-            UserInterface.Email();
-            UserInterface.RegistrationNumber();
-            Sweepstakes.RegisterContestant(ContestantName);
+            
 
 
 
