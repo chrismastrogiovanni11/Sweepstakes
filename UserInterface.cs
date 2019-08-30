@@ -13,7 +13,7 @@ namespace SweepstakesProject
         public static int registerNumber;
         public static string email;
 
-        public  static void FirstName()
+        public static void FirstName()
         {
             Console.WriteLine("Enter Contestant first name");
             firstName = Console.ReadLine();

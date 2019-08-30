@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 namespace SweepstakesProject
 {
 
-    //use dictionary
     public class Sweepstakes
     {
         
         public string input;
-        public Contestant contestant;
-        Dictionary<string, Contestant> contestantName = new Dictionary<string, Contestant>();
+       static Dictionary<string, Contestant> contestantName = new Dictionary<string, Contestant>();
         public string Winner;
         Random rand;
+        public string name;
         
 
         public Sweepstakes()
@@ -26,20 +25,23 @@ namespace SweepstakesProject
             
 
 
-        public void SweepstakesNames(string name)
+        public Sweepstakes(string name)
         {
 
-            name = contestant.firstName + contestant.lastName;
-            Console.ReadLine();
+            this.name = name;
+            
 
 
         }
 
-        public void RegisterContestant(Contestant contestant)
+        public static void RegisterContestant(Contestant contestant)
         {
-            
-            contestantName.Add(contestant.email, contestant);
 
+            contestantName.Add(UserInterface.firstName, contestant);
+            contestantName.Add(UserInterface.lastName, contestant);
+            contestantName.Add(UserInterface.email, contestant);
+            contestantName.Add(UserInterface.registerNumber.ToString(), contestant);
+            
 
 
         }
@@ -57,8 +59,11 @@ namespace SweepstakesProject
 
         public void PrintContestantInfo(Contestant contestant)
         {
-            Dictionary<string, Contestant> information = new Dictionary<string, Contestant>();
-            Console.ReadLine();
+            
+            Console.WriteLine(contestant.firstName);
+            Console.WriteLine(contestant.lastName);
+            Console.WriteLine(contestant.registrationNumber);
+            Console.WriteLine(contestant.email);
 
         }
 

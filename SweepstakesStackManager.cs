@@ -10,14 +10,15 @@ namespace SweepstakesProject
     //use stack as underlying structure
     class SweepstakesStackManager : ISweepstakesManager
     {
+        public Stack<Sweepstakes> Manager = new Stack<Sweepstakes>();
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            Manager.Push(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
-            Sweepstakes sweepstakes = new Sweepstakes();
+            return Manager.Pop();
             
         }
 

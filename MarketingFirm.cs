@@ -9,29 +9,17 @@ namespace SweepstakesProject
     //dependency injection
    public class MarketingFirm
    {
+       public ISweepstakesManager manager;
 
 
-
-        public MarketingFirm()
+        public MarketingFirm(ISweepstakesManager manager)
         {
-            Sweepstakes sweepstakes = new Sweepstakes();
 
+            this.manager = manager;
 
 
 
         }
-
-
-
-
-        public void CreateSweepstakes()
-        {
-
-        }
-
-
-
-
 
 
 
